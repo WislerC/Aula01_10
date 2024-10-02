@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.2 on win32)" generated="2024-10-01T20:18:49.427781" rpa="false" schemaversion="5">
+<suite id="s1" name="Teste Pesquisa Amazon" source="C:\Users\bnutec.ANIMAEDU\Downloads\sellenium-teste\teste_pesquisa_amazon.robot">
+<test id="s1-t1" name="Buscar Produto na Amazon" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-01T20:18:49.942165" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.br'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-01T20:18:49.942165" elapsed="8.410308"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-01T20:18:58.430425" level="INFO">Typing text 'smartphone' into text field 'id=twotabsearchtextbox'.</msg>
+<msg time="2024-10-01T20:18:59.357249" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-10-01T20:18:59.357249" level="FAIL">Element with locator 'id=twotabsearchtextbox' not found.</msg>
+<arg>id=twotabsearchtextbox</arg>
+<arg>${PRODUTO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-10-01T20:18:58.429425" elapsed="0.937818">Element with locator 'id=twotabsearchtextbox' not found.</status>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>id=nav-search-submit-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-10-01T20:18:59.368244" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>${PRODUTO}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2024-10-01T20:18:59.368244" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-10-01T20:18:59.368244" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-10-01T20:18:49.940165" elapsed="9.429077">Element with locator 'id=twotabsearchtextbox' not found.</status>
+</test>
+<status status="FAIL" start="2024-10-01T20:18:49.431781" elapsed="9.939460"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Teste Pesquisa Amazon">Teste Pesquisa Amazon</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
